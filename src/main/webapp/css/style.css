@@ -1,0 +1,111 @@
+.background-image {
+    background-image: url("/img/coffee_background_1.jpg");
+    background-repeat: no-repeat;
+    margin: auto;
+
+}
+.background-image:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .5);
+}
+.centered {
+    text-align: center;
+}
+div.maincontainer {
+    overflow: auto;
+}
+
+.table-fixed {
+
+    color: greenyellow;
+}
+
+.table-fixed thead {
+    width: 97%;
+}
+.table-fixed tbody {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+}
+.table-fixed thead, .table-fixed tfoot, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+    display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+    float: left;
+    border-bottom-width: 0;
+}
+
+tbody td, thead th, tfoot td {
+    width: 25%;
+    float: left;
+}
+
+
+div.input-group {
+    background-color: transparent;
+}
+span.input-group-addon {
+    width: 120px;
+    background-color: transparent;
+    color: chocolate;
+    overflow-x: hidden;
+}
+tr.hidden, input.hidden, div.hidden, button.hidden {
+    display: none;
+
+}
+
+span#price {
+    width: 25px;
+    background-color: transparent;
+    color: chocolate;
+    overflow-x: hidden;
+    padding-left: 1px;
+}
+input.form-control {
+    background-color: transparent;
+    color: darkorange;
+}
+
+header {
+    height: 25%;
+    text-align: center;
+    margin: auto;
+    padding: 70px;
+    font-size: large;
+    color: aquamarine;
+}
+
+div#menubar {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+div#navbar {
+    color: darkorange;
+    font-size: large;
+    margin-bottom: 30px;
+}
+div.card {
+    background-color: transparent;
+    font-size: medium;
+}
+
+img.logoImg {
+    width: 100px;
+    height: 80px;
+}
+div#mainRow {
+    max-height: 500px;
+}
+#footerRow {
+    text-align: center;
+    font-size: large;
+    color: goldenrod;
+   position: fixed;
+    padding-bottom: 20px;
+}
