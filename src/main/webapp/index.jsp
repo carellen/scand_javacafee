@@ -12,7 +12,7 @@
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+
 </head>
 <body class="background-image">
 
@@ -47,6 +47,12 @@
                         <h3 style="text-align: center; color: aqua">CURRENT ORDER</h3>
                         <table class="table table-fixed" id="orderTable">
                             <thead>
+                            <tr class="hidden">
+                                <th></th>
+                                <th class="quantityForDiscount"></th>
+                                <th class="valueForFreeDelivery"></th>
+                                <th class="defaultDeliveryCost"></th>
+                            </tr>
                             <tr>
                                 <th>#</th>
                                 <th>Product</th>
@@ -59,10 +65,22 @@
                             </tbody>
                         <tfoot>
                         <tr>
-                            <td>Total</td>
                             <td></td>
+                            <td>TotalOrder</td>
                             <td id="totalquantity">0</td>
                             <td id="totalprice">0</td>
+                        </tr>
+                        <tr id="deliveryrow">
+                            <td></td>
+                            <td>Delivery</td>
+                            <td></td>
+                            <td id="deliveryprice">0</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Total</td>
+                            <td></td>
+                            <td id="totalvalue">0</td>
                         </tr>
                         </tfoot>
                         </table>
@@ -133,6 +151,6 @@
             </div>
         </footer>
     </div> <!--container-fluid-->
-
+    <script src="js/script.js"></script>
 </body>
 </html>

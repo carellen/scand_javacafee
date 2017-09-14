@@ -8,15 +8,16 @@ public class MenuItem extends Entity{
     private int id;
     private String name;
     private int price;
-    private List<Product> productList;
+    private char disabled;
 
     public MenuItem() {
     }
 
-    public MenuItem(int id, String name, int price) {
+    public MenuItem(int id, String name, char disabled, int price) {
         this.id = id;
         this.name = name;
         this.price = price;
+        this.disabled = disabled;
     }
 
     public int getId() {
@@ -43,11 +44,11 @@ public class MenuItem extends Entity{
         this.name = name;
     }
 
-    public List<Product> getProductList() {
-        return productList;
+    public char getDisabled() {
+        return disabled;
     }
 
-    public void setProductList(List<Product> productList) {
-        this.productList = productList;
+    public void setDisabled(char disabled) {
+        this.disabled = disabled;
     }
 }
