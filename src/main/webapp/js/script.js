@@ -42,7 +42,7 @@ $(document).ready(function () {
                     '<span class="input-group-addon" id="id" style="display: none">' + this.id + '</span>' +
                     '<span class="input-group-addon" id="price">' + '\$' + this.price + '</span>' +
                     '<span class="input-group-addon" id="name">' + this.name + '</span>' +
-                    '<input type="text" class="form-control" aria-label="Text input with checkbox" oninput="inputFunction(this)">' + '</div>');
+                    '<input type="text" class="form-control menu" aria-label="Text input with checkbox" oninput="inputFunction(this)">' + '</div>');
                 span.appendTo(parent);
             }
         });
@@ -109,7 +109,7 @@ function inputFunction(c) {
     var tdquantity =  $(trparent).children('.coffeeqnty');
 
     if (value > 0) {
-        parentName.css('background', 'bisque');
+        $(parentName).children('span#name').css('background', 'bisque');
         $(tdquantity).text(value);
 
         getDiscountFunction(value, price, trparent);

@@ -11,6 +11,10 @@
     height: 100%;
     background: rgba(0,0,0, .5);
 }
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
 .centered {
     text-align: center;
 }
@@ -49,10 +53,14 @@ div.input-group {
     background-color: transparent;
 }
 span.input-group-addon {
-    width: 120px;
+
     background-color: transparent;
     color: chocolate;
     overflow-x: hidden;
+}
+span.input-group-addon#name {
+    width: 300px;
+
 }
 tr.hidden, input.hidden, div.hidden, button.hidden {
     display: none;
@@ -66,23 +74,29 @@ span#price {
     overflow-x: hidden;
     padding-left: 1px;
 }
-input.form-control {
+input.form-control.menu {
     background-color: transparent;
     color: darkorange;
+    min-width: 42px;
+    max-width: 80px;
+    text-align: right;
+}
+input.form-control.address {
+    text-align: center;
+    color: lime;
 }
 
 header {
-    height: 25%;
-    text-align: center;
-    margin: auto;
-    padding: 70px;
-    font-size: large;
+
     color: aquamarine;
 }
 
 div#menubar {
     max-height: 300px;
     overflow-y: auto;
+}
+div.col-md-2 .col-sm-4 .col-xs-4 {
+
 }
 
 div#navbar {
@@ -101,11 +115,10 @@ img.logoImg {
 }
 div#mainRow {
     max-height: 500px;
+    margin-inside: 10px;
+    overflow-y: auto;
 }
-#footerRow {
-    text-align: center;
+footer#footerRow {
     font-size: large;
     color: goldenrod;
-   position: fixed;
-    padding-bottom: 20px;
 }
